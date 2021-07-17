@@ -1,0 +1,339 @@
+<html>
+    <head>
+        <title> PROFILE</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital@1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital@1&family=Montserrat:ital@1&display=swap" rel="stylesheet">
+       <style>
+           body{
+              padding: 0%;
+              margin: 0%;
+           }
+           html{
+               scroll-behavior: smooth;
+           }
+           .navbar{
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               background-color: black;
+               position: sticky;
+               top: 0%;
+           }
+           .navbar ul{
+               display: flex;
+               list-style: none;
+               margin: 20px 0px;
+               
+           }
+           .navbar ul li{
+               font-family: Verdana, Geneva, Tahoma, sans-serif;
+               font-size: 1.1rem;
+               font-weight: bold;
+               text-decoration: none;
+               
+               padding: 8px 20px;
+              
+           }
+           .navbar ul li a{
+               text-decoration: none;
+            color: white;
+            transition: all .5s ease;
+           }
+           .navbar ul li a:hover{
+               background-color: white;
+               color: black;
+               box-shadow: 0 0 10px black;
+           }
+          #home{
+              display: flex;
+              flex-direction: column;
+              background-color: black;
+              height: 840px;
+              justify-content: center;
+              align-items: center;
+              color: black;
+              background-image: url(./assests/images/A.jpeg) ;
+              
+              background-repeat: no-repeat;
+          }
+          #home::before{
+              content: "";
+              position: absolute;
+              top: 0;
+              right: 0;
+              padding: 0%;             
+              height: 900px;
+              width: 100%;
+              z-index: -1;
+              
+
+             
+          }
+         
+          #about{
+              display: flex;
+              flex-direction: column;
+              box-sizing: border-box;
+              padding: 20px;
+
+          }
+          .picture{
+              display: flex;
+
+          }
+          .picture img{
+              width: 575px;
+              height: 400px;
+          }
+          .intro{
+              display: flex;
+              flex-direction: column;
+              text-align: justify;
+              padding: 100px;
+          }
+          .intro h2{
+              font-size: 2rem;
+              margin-bottom: 20px;
+              
+          }
+          #gallery{
+              display: flex;
+              flex-direction: column;
+              background-color: grey;
+          }
+          .pics{
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-around;
+              box-sizing: border-box;
+          }
+          .pics img{
+              width: 360px;
+              height: 240px;
+              margin: 10px;
+
+          }
+          
+          #skills{
+              display: flex;
+              flex-direction: column;
+              padding: 50px;
+
+          }
+          .row{
+              display: flex;
+          }
+          .box{
+              display: flex;
+              flex-direction: column;
+              width: 400px;
+              height: 300px;
+              border: 2px solid black;
+              margin: 5px;
+              align-items: center;
+              text-align: justify;
+              padding: 10px;
+              border-radius: 15px;
+              background: linear-gradient(to top, red 50%, white 50%);
+              background-size: 100% 200%;
+              transition: all .8s;
+              font-family: 'Bona Nova', serif;
+font-family: 'Montserrat', sans-serif;
+
+          }
+          .box:hover{
+              background-position: left bottom;
+              color: white;
+              border: none;
+              box-shadow: 0 0 20px red;
+              
+         }
+          
+          .headings{
+              text-align: center;
+              font-size: 2rem;
+              align-items: center;
+              text-decoration: underline;
+          }
+          .box img{
+              width: 80px;
+              height: 80px;
+              background-color: white;
+              padding: 10px;
+          }
+          #contact{
+              display: flex;
+              flex-direction: column;
+              box-sizing: border-box;
+              background-color: black;
+              color: white;
+              padding: 20px;
+            
+          }
+          .form{
+              display: flex;
+              flex-direction: column;
+              box-sizing: border-box;
+              align-items: center;
+              margin: 20px 0px;
+          }
+          .input{
+              padding: 12px;
+              margin: 15px;
+              width: 30%;
+              border: none;
+              outline: none;
+          }
+          .mail{
+            padding: 12px;
+              margin: 15px;
+              width: 30%;
+              border: none;
+              outline: none;
+
+          }
+          #msg{
+            padding: 12px;
+              margin: 15px;
+              width: 30%;
+              border: none;
+              outline: none;
+          }
+          .sub{
+              padding: 1px;
+              margin: 10px;
+              width: 10%;
+              box-shadow: 0 0 10px;
+              cursor: pointer;
+              border-radius: 8px;
+              
+          }
+          .intro p{
+            font-family: 'Bona Nova', serif;
+          }
+         
+
+       </style>
+    </head>
+    <body>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="#home">HOME</a>
+                </li>
+                <li>
+                    <a href="#about">ABOUT</a>
+                </li>
+                <li>
+                    <a href="#gallery">GALLERY</a>
+                </li>
+                <li>
+                    <a href="#skills">SKILLS</a>
+                </li>
+                <li>
+                    <a href="#contact">CONTACT</a>
+                </li>                             
+            </ul>
+        </nav>
+        <section id="home">
+            <div class="main">
+               <h1 class="headings"> <b>DON'T LIMIT YOURSELF</b>   </h1>
+            </div>
+
+        </section>
+        <section id="about">
+            <h1 class="headings">ABOUT</h1>
+            <div class="picture">
+                <img src="./assests/images/B.jpeg" alt="pic">
+                <div class="intro">
+                    <h2>
+                        SWETHA GANESH
+                    </h2>
+                    <p>
+                       
+                        Hi,I'm Swetha.G.A. from Tirupur district. <br>
+                        I'm pursuing my 2nd year B.E COMPUTER <br>
+                        SCIENCE ENGINEERING in KSR college of <br>
+                        Engineering. I have completed my HSC <br>
+                        in Kidsclub matriculation higher secondary <br>
+                        school with 58% of marks.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+        <section id="gallery">
+            <h1 class="headings">GALLERY</h1>
+            <div class="pics">
+                <img src="./assests/images/img1.jpeg" alt="">
+                <img src="./assests/images/img2.jpeg" alt="">
+                <img src="./assests/images/img3.jpeg" alt="">
+                <img src="./assests/images/img4.jpeg" alt="">
+                <img src="./assests/images/img5.jpeg" alt="">
+                <img src="./assests/images/img6.jpeg" alt="">
+
+            </div>
+
+        </section>
+        <section id="skills">
+           <h1 class="headings">SKILLS</h1>
+           <div class="row">
+           <div class="box">
+               <img src="./assests/images/html.png" alt="png">
+               <h1 class="headings">HTML5</h1>
+               <p>
+                   Gained knowledge about frontend <br>
+                   development with the help of <br>
+                   HTML5 in the website w3schools.
+               </p>
+
+           </div>
+           <div class="box">
+               <img src="./assests/images/css.png" alt="png">
+               <h1 class="headings">
+                   CSS
+               </h1>
+               <p>
+                Gained knowledge about frontend <br>
+                development with the help of <br>
+                CSS in the website w3schools.
+
+               </p>
+
+           </div>
+           <div class="box">
+               <img src="./assests/images/c.png" alt="png">
+               <h1 class="headings">
+                   C LANGUAGE
+               </h1>
+               <p>
+                   Gained knowledge of C language <br>
+                   from GUVI and got a completion <br>
+                   certification from the same.
+               </p>
+
+           </div>
+        </div>
+        </section>
+        <section id="contact">
+            <h1 class="headings">
+               CONTACT
+            </h1>
+            <form action="" class="form">
+                <input type="text" name="name" class="input" placeholder="ENTER YOUR NAME">
+                <input type="text" name="mail" class="mail" placeholder="ENTER YOUR MAIL">
+                
+                <textarea name="msg" id="msg" cols="30" rows="10" placeholder="FEEDBACK"></textarea>
+                <button type="button" class="sub">SUBMIT</button>
+                
+            </form>
+
+        </section>
+    </body>
+</html>
